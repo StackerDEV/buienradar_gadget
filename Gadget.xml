@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<gadget>
+  <name>Buienradar</name>
+  <namespace>microsoft.windows</namespace>
+  <version>1.0.0.0</version>
+    <author name="Microsoft Corporation">
+    <info url="http://go.microsoft.com/fwlink/?LinkId=124093" text="www.gallery.microsoft.com"/>
+    <logo src="logo.png"/>
+  </author>
+  <copyright>© 2016</copyright>
+  <description>Buienradar Gadget voor Win7</description>
+    <icons>
+    <icon height="48" width="48" src="icon.png"/>
+  </icons>
+  <hosts>
+    <host name="sidebar">
+      <autoscaleDPI>true</autoscaleDPI>
+      <base type="HTML" apiVersion="1.0.0" src="Buienradar.html"/>
+      <permissions>Full</permissions>
+      <platform minPlatformVersion="1.0"/>
+    </host>
+  </hosts>
+</gadget>
+

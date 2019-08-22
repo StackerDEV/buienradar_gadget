@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<script src='jquery-1.8.3.min.js'></script>
+<script src='jquery.elevatezoom.js'></script>
+<style></style>
+<body onload="DoInit()">
+<img id="zoom" src="http://api.buienradar.nl/image/1.0/RadarMapNL?w=150&h=150" data-zoom-image="http://api.buienradar.nl/image/1.0/RadarMapNL?w=405&h=405" complete="complete"/>
+<script>
+function DoInit() {
+    document.body.style.width = 140;
+    document.body.style.height= 135;
+    document.body.style.margin=0;
+	wheelzoom(document.querySelector('img.zoom'));
+}
+$(document).ready(function(){
+    setInterval(function(){ reload_page(); },60*60000);
+});
+
+function reload_page()
+{
+	window.location.reload(true);
+}
+  
+$('#zoom').elevateZoom({
+    zoomType: "inner",
+	cursor: "crosshair",
+	zoomWindowFadeIn: 500,
+	zoomWindowFadeOut: 750
+}); 
+</script>
+</body>
+</html>
