@@ -13,4 +13,4 @@ It runs the gif file from the buienradar api, you can also zoom in.
 
 Example
 
-![](https://github.com/StackerDEV/buienradar_win7_gadget/blob/master/example.png)
+![](https://github.com/StackerDEV/buienradar_gadget/blob/master/example.png)
